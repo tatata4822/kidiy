@@ -1,9 +1,48 @@
 <!DOCTYPE HTML>
 <head>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
 </head>
 <body>
-<button onclick="curl()">Test It</button>
+<style>
+ a {
+font-family: 'Fredoka One', cursive;
+text-decoration: none;
+color: black;
+}
+.Studio {
+top: 65%;
+position: absolute;
+left: 30%;
+}
+</style>
+<div class="navbar-fixed">
+ <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo left">KiDIY</a>
+      <ul class="right ide-on-med-and-down">
+      <li><a href="./"><i class="material-icons left">videocam</i>Watch!</a></li>
+<li class="red darken-1"><a href="/dashboard"><i class="material-icons">build</i></a></li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+<div class="Studio">
+<center>
+<a class="waves-effect waves-light btn left">Open Stream Manager</a>
 
+<button class="waves-effect waves-light btn" onclick="curl()">Studio Lights On/Off</button>
+
+<a class="waves-effect waves-light btn">Open Stream Broadcaster</a></center></div>
 <script>
 function curl() {
 var url = "https://maker.ifttt.com/trigger/gsl_on/with/key/he4oauRKQqnyA1xxzY4Z6PPIraqXHY53CxPhagWsuSu";
@@ -17,4 +56,8 @@ xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 xhr.send();
 }
 </script>
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
