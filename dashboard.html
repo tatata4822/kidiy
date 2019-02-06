@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<head>
+</head>
+<body>
+<button onclick="curl()">Test It</button>
+
+<script>
+function curl() {
+var url = "https://maker.ifttt.com/trigger/gsl_on/with/key/he4oauRKQqnyA1xxzY4Z6PPIraqXHY53CxPhagWsuSu";
+var params = "lorem=ipsum&name=alpha";
+var xhr = new XMLHttpRequest();
+xhr.open("POST", url, true);
+
+//Send the proper header information along with the request
+xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+xhr.send();
+}
+</script>
+</body>
